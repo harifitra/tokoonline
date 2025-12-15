@@ -1,0 +1,251 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #1a1a2e; /* Dark Blue/Black */
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #00bcd4; /* Cyan Accent */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.header-actions span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 5%;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background-color: #ffc107; /* Yellow/Amber Accent */
+    color: #1a1a2e;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9800;
+}
+
+/* Section Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a2e;
+    font-size: 2em;
+}
+
+/* Category Grid */
+.category-section {
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-item .icon {
+    font-size: 2.5em;
+    color: #00bcd4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #e91e63; /* Pink/Red for price */
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0097a7;
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 300px;
+    padding: 10px;
+}
+
+.feature-item .icon {
+    font-size: 2em;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 5%;
+    margin-top: 40px;
+}
+
+.footer-content a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Responsiveness (Mobile View) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin: 10px 0;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .category-grid, .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item, .feature-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}   
